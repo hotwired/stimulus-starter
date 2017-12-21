@@ -2,12 +2,12 @@ const path = require("path")
 
 module.exports = {
   entry: {
-    main: "./src/index.js"
+    bundle: "./src/index.js"
   },
 
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, "public", "js")
+    path: path.resolve(__dirname, "public")
   },
 
   devtool: "source-map",
