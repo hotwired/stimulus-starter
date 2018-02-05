@@ -13,8 +13,8 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "express": "^4.16.2",
-    "stimulus": "^1.0.0",
+    "stimulus": "^1.0.1",
     "webpack": "^3.10.0",
-    "webpack-dev-middleware": "^2.0.3"
+    "webpack-dev-middleware": "^2.0.4"
   }
 }
