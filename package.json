@@ -8,13 +8,13 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
-    "express": "^4.16.2",
-    "stimulus": "^1.0.1",
-    "webpack": "^3.10.0",
-    "webpack-dev-middleware": "^2.0.4"
+    "babel-preset-env": "^1.7.0",
+    "express": "^4.16.3",
+    "stimulus": "^1.1.0",
+    "webpack": "^4.17.1",
+    "webpack-dev-middleware": "^3.2.0"
   }
 }

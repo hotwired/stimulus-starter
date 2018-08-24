@@ -10,6 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, "public")
   },
 
+  mode: "production",
   devtool: "source-map",
 
   module: {
