@@ -1,6 +1,8 @@
 {
-  "plugins": ["transform-class-properties"],
   "presets": [
-    ["env", { "modules": false }]
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
   ]
 }
