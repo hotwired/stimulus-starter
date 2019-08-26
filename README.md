@@ -4,9 +4,9 @@ A preconfigured blank slate for exploring [Stimulus](https://github.com/stimulus
 
 ---
 
-We recommend [remixing `stimulus-starter` on Glitch](https://glitch.com/edit/#!/import/github/stimulusjs/stimulus-starter) so you can work entirely in your browser without installing anything:
+We recommend [remixing `stimulus-starter` on Glitch](https://glitch.com/edit/#!/import/git?url=https://github.com/stimulusjs/stimulus-starter.git) so you can work entirely in your browser without installing anything:
 
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/stimulusjs/stimulus-starter)
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/git?url=https://github.com/stimulusjs/stimulus-starter.git)
 
 Or, if you'd prefer to work from the comfort of your own text editor, you'll need to clone and set up `stimulus-starter`:
 
