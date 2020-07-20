@@ -15,6 +15,7 @@
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "babel-loader": "^8.1.0",
+    "chokidar": "^3.4.1",
     "express": "^4.17.1",
     "stimulus": "^1.1.1",
     "webpack": "^4.43.0",
