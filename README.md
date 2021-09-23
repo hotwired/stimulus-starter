@@ -19,4 +19,4 @@ $ yarn start
 
 ---
 
-© 2020 Basecamp, LLC.
+© 2021 Basecamp, LLC.

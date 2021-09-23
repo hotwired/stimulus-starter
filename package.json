@@ -1,6 +1,6 @@
 {
-  "name": "stimulus-starter",
-  "version": "1.0.0",
+  "name": "@hotwired/stimulus-starter",
+  "version": "3.0.0",
   "main": "index.js",
   "license": "MIT",
   "private": true,
@@ -17,7 +17,8 @@
     "babel-loader": "^8.1.0",
     "chokidar": "^3.4.1",
     "express": "^4.17.1",
-    "stimulus": "^2.0.0",
+    "@hotwired/stimulus": "^3.0.0-rc.1",
+    "@hotwired/stimulus-webpack-helpers": "^1.0.0",
     "webpack": "^4.43.0",
     "webpack-dev-middleware": "^3.7.2"
   }
