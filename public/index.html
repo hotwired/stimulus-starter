@@ -7,28 +7,28 @@
 </head>
 <body>
   <div data-controller="hello" >
-    <div data-hello-target="formcontainer" >
+    <div data-hello-target="formContainer" >
       <label>First name</label>
       <input data-hello-target="firstName" type="text">
       <p>Last name
-      <input data-hello-target="lastname" type="text">
+      <input data-hello-target="lastName" type="text">
       </p>
       <p>
-      <input data-hello-target="sexmale" type="radio" name="sex" id="male" value="male">
+      <input data-hello-target="sexMale" type="radio" name="sex" id="male" value="male">
       <label for="male">Male</label>
-      <input data-hello-target="sexfemale" type="radio" name="sex" id="female" value="female" >
+      <input data-hello-target="sexFemale" type="radio" name="sex" id="female" value="female" >
       <label for="female">Female</label>
       </p>
       <label>Age</label>
       <input data-hello-target="age" type="number">
-      <button data-action="click->hello#save">Save</button>
+      <button data-action="click->hello#getAndDisplayPatientDetails">Save</button>
     </div>
-    <div data-hello-target="displaycontainer" class="hidden" >
-      <h4 data-hello-target="firstnamedisplay"></h4>
-      <h4 data-hello-target="lastnamedisplay"></h4>
-      <h4 data-hello-target="agedisplay"></h4>
-      <h4 data-hello-target="genderdisplay"></h4>
-      <button data-action="click->hello#edit ">Edit</button>
+    <div data-hello-target="displayContainer" class="hidden" >
+      <h4 data-hello-target="firstNameDisplay"></h4>
+      <h4 data-hello-target="lastNameDisplay"></h4>
+      <h4 data-hello-target="ageDisplay"></h4>
+      <h4 data-hello-target="genderDisplay"></h4>
+      <button data-action="click->hello#editPatientDetails">Edit</button>
     </div>
   </div>
 </body>

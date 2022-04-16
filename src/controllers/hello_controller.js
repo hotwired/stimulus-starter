@@ -1,25 +1,34 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-    static targets = [ "firstName", "lastname", "sexmale", "sexfemale", "age", "firstnamedisplay", "lastnamedisplay", "agedisplay", "genderdisplay", "formcontainer", "displaycontainer" ]
+    static targets = [ "firstName", "lastName", "sexMale", "sexFemale", "age", "firstNameDisplay", "lastNameDisplay", "ageDisplay", "genderDisplay", "formContainer", "displayContainer" ]
 
-    save() {
-        this.displaycontainerTarget.classList.remove("hidden")
-        this.sexmaleTarget.checked || this.sexfemaleTarget.checked ? ( this.sexmaleTarget.checked ? this.genderdisplayTarget.innerHTML = "Male" : this.genderdisplayTarget.innerHTML = "Female" ) : this.genderdisplayTarget.innerHTML = "Gender not selected"
-        this.firstnamedisplayTarget.innerHTML = this.firstNameTarget.value
-        this.lastnamedisplayTarget.innerHTML = this.lastnameTarget.value
-        this.agedisplayTarget.innerHTML = this.ageTarget.value
-        this.formcontainerTarget.classList.add("hidden")
+   
+    getAndDisplayPatientDetails() {
+        // validation of Patient details form
+        if(this.firstNameTarget.value == ""){return alert("Please enter first name")}
+        if(this.lastNameTarget.value == ""){return alert("Please enter last name")}
+        if(!this.sexMaleTarget.checked && !this.sexFemaleTarget.checked){return alert("Please select gender")}
+        if(this.ageTarget.value == ""){return alert("Please enter age")}
+
+        // Show display-elements
+        this.displayContainerTarget.classList.remove("hidden")
+
+        // Get values from input fields and assign it to display elements
+        this.sexMaleTarget.checked ? this.genderDisplayTarget.innerHTML = "Male" : this.genderDisplayTarget.innerHTML = "Female" 
+        this.firstNameTarget.value == "" ? console.log("Please enter firstName") : this.firstNameDisplayTarget.innerHTML = this.firstNameTarget.value
+        this.lastNameDisplayTarget.innerHTML = this.lastNameTarget.value
+        this.ageDisplayTarget.innerHTML = this.ageTarget.value
+
+        // Hide Form
+        this.formContainerTarget.classList.add("hidden")
     }
     
-    edit() {
-        this.formcontainerTarget.classList.remove("hidden")
-        this.firstnameTarget.value = this.firstnamedisplayTarget.innerHTML
-        this.lastnameTarget.value = this.lastnamedisplayTarget.innerHTML
-        this.ageTarget.value = this.agedisplayTarget.innerHTML
-        this.genderdisplayTarget.innerHTML == "Male" ? this.sexmaleTarget.checked = true : this.sexfemaleTarget.checked = true
-        this.displaycontainerTarget.classList.add("hidden")
-
+    editPatientDetails() {
+        // Show form
+        this.formContainerTarget.classList.remove("hidden")
+        // Hide display-elements
+        this.displayContainerTarget.classList.add("hidden")
     }
 
   }
