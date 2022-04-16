@@ -6,29 +6,29 @@
   <script src="bundle.js" async></script>
 </head>
 <body>
-  <div data-controller="hello" >
-    <div data-hello-target="formContainer" >
+  <div data-controller="details" >
+    <div data-details-target="formContainer" >
       <label>First name</label>
-      <input data-hello-target="firstName" type="text">
+      <input data-details-target="firstName" type="text">
       <p>Last name
-      <input data-hello-target="lastName" type="text">
+      <input data-details-target="lastName" type="text">
       </p>
       <p>
-      <input data-hello-target="sexMale" type="radio" name="sex" id="male" value="male">
+      <input data-details-target="sexMale" type="radio" name="sex" id="male" value="male">
       <label for="male">Male</label>
-      <input data-hello-target="sexFemale" type="radio" name="sex" id="female" value="female" >
+      <input data-details-target="sexFemale" type="radio" name="sex" id="female" value="female" >
       <label for="female">Female</label>
       </p>
       <label>Age</label>
-      <input data-hello-target="age" type="number">
-      <button data-action="click->hello#getAndDisplayPatientDetails">Save</button>
+      <input data-details-target="age" type="number">
+      <button data-action="click->details#validatePatientForm">Save</button>
     </div>
-    <div data-hello-target="displayContainer" class="hidden" >
-      <h4 data-hello-target="firstNameDisplay"></h4>
-      <h4 data-hello-target="lastNameDisplay"></h4>
-      <h4 data-hello-target="ageDisplay"></h4>
-      <h4 data-hello-target="genderDisplay"></h4>
-      <button data-action="click->hello#editPatientDetails">Edit</button>
+    <div data-details-target="displayContainer" class="hidden" >
+      <h4 data-details-target="firstNameDisplay"></h4>
+      <h4 data-details-target="lastNameDisplay"></h4>
+      <h4 data-details-target="ageDisplay"></h4>
+      <h4 data-details-target="genderDisplay"></h4>
+      <button data-action="click->details#editPatientDetails">Edit</button>
     </div>
   </div>
 </body>
