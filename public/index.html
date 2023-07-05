@@ -7,9 +7,15 @@
 </head>
 <body>
   <h1 data-controller="example"></h1>
-	<div data-controller="hello">
+
+  <div data-controller="hello">
 		<input data-hello-target="name" type="text">
 		<button data-action="click->hello#greet">Greet</button>
-	</div>
+  </div>
+
+  <div>
+    PIN: <input type="text" value="1234" readonly>
+    <button>Copy to Clipboard</button>
+  </div>
 </body>
 </html>
