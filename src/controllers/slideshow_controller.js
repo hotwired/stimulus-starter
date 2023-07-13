@@ -4,7 +4,7 @@ export default class extends Controller {
   static targets = ["slide"]
 
   initialize() {
-    this.index = 0
+    this.index = Number(this.element.dataset.index)
     this.showCurrentSlide()
   }
 
