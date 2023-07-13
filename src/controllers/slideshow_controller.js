@@ -4,20 +4,22 @@ export default class extends Controller {
   static targets = ["slide"]
   static values = { index: Number }
 
-  initialize() {
-    this.showCurrentSlide()
-  }
+  // initialize() {
+  //   this.showCurrentSlide()
+  // }
 
   connect() {
   }
 
   previous() {
     this.indexValue--
-    this.showCurrentSlide()
   }
 
   next() {
     this.indexValue++
+  }
+
+  indexValueChanged() {
     this.showCurrentSlide()
   }
 
