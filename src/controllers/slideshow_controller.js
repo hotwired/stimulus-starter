@@ -2,9 +2,9 @@ import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
   static targets = ["slide"]
+  static values = { index: Number }
 
   initialize() {
-    this.index = Number(this.element.dataset.index)
     this.showCurrentSlide()
   }
 
@@ -12,18 +12,18 @@ export default class extends Controller {
   }
 
   previous() {
-    this.index--
+    this.indexValue--
     this.showCurrentSlide()
   }
 
   next() {
-    this.index++
+    this.indexValue++
     this.showCurrentSlide()
   }
 
   showCurrentSlide() {
     this.slideTargets.forEach((element, index) => {
-      element.hidden = index !== this.index
+      element.hidden = index !== this.indexValue
     })
   }
 }
